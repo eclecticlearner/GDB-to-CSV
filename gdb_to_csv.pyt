@@ -55,6 +55,8 @@ class GDBtoCSV(object):
         arcpy.env.workspace = parameters[0].valueAsText
         newCSV = parameters[1].ValueAsText            
         datasetList = arcpy.ListDatasets("*", "Feature")
+        
+        # Change this variable to list of fields to be exported
         output_fields = [field1, field2, field3, etc]
 
        # Function if featureclasses are not in a feature dataset
